@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+    <title>ボが勝手に入力される</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <h1>勝手にボと入力されるテキストボックス</h1>
+    <div id="app" class="form-group">
+        <textarea class="form-control" v-model="mytext"></textarea>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                mytext: ''
+            },
+            watch: {
+                mytext: function(text){
+                    if(Math.floor(Math.random() * 2) == 1){
+                        this.mytext += "ボ";
+                    }
+                }
+            }
+
+        })	
+      </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ディスプレイ広告横長 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3221193209645709"
+     data-ad-slot="5362001807"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <footer class="footer-copyright text-center py-3">© 2020 mimsys</footer>
+</body>
+</html>
