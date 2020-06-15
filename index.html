@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        body {
-            padding: 20px;
-        }
     </style>
     <title>ボが勝手に入力される</title>
 </head>
-<body class="d-flex flex-column h-100">
-    <h1>勝手にボと入力されるテキストボックス</h1>
-    <div id="app" class="form-group">
-        <textarea class="form-control" v-model="mytext"></textarea>
+<body class="m-3">
+    <div class="container">
+    <h1 class="mb-3">勝手にボと入力されるテキストボックス</h1>
+        <div id="app" class="form-group">
+            <textarea class="form-control" v-model="mytext"></textarea>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
@@ -46,6 +45,8 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-    <footer class="footer-copyright text-center py-3">© 2020 mimsys</footer>
+    <div class="container">
+        <footer class="footer-copyright text-center">© 2020 mimsys</footer>
+    </div>
 </body>
 </html>
